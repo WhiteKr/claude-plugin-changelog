@@ -30,7 +30,7 @@ Git 커밋(서브모듈 포함)을 분석해 사용자 영향도 기준으로 �
 ### 2. 커밋/서브모듈 데이터 수집 (외부 스크립트 — 자동 승인)
 
 ```
-bash "${CLAUDE_PLUGIN_ROOT:-$HOME/.claude/skills/changelog}/scripts/collect-changes.sh" "<FROM_REF>" "<TO_REF>"
+bash "${CLAUDE_PLUGIN_ROOT}/scripts/collect-changes.sh" "<FROM_REF>" "<TO_REF>"
 ```
 
 `FROM_REF`가 없으면(절차 1에서 비워둔 경우) 빈 문자열 그대로 전달한다.
@@ -71,4 +71,4 @@ bash "${CLAUDE_PLUGIN_ROOT:-$HOME/.claude/skills/changelog}/scripts/collect-chan
 
 ### 4. 출력
 
-**출력 형식은 `references/output-format.md`를 읽고 그 형식대로 작성한다.** 카테고리 헤더·문구는 대화 언어에 맞춰 자연스럽게 옮긴다.
+**출력 형식은 `${CLAUDE_SKILL_DIR}/references/output-format.md`를 읽고 그 형식대로 작성한다.** 카테고리 헤더·문구는 대화 언어에 맞춰 자연스럽게 옮긴다.

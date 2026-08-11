@@ -1,6 +1,6 @@
 {
   "name": "changelog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "마지막 배포 버전 이후의 커밋(서브모듈 포함)을 분석해 사용자 영향도 기준으로 정리한 CHANGELOG를 채팅에만 출력 (파일 생성 없음). /changelog <자연어 범위>로 대상 범위 지정 가능",
   "author": {
     "name": "WhiteKr",
